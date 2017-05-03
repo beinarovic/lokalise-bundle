@@ -1,0 +1,31 @@
+{
+  "name" : "alicorn/lokalise-bundle",
+  "description" : "A Symfony Lokalise translation bundle",
+  "type" : "symfony-bundle",
+  "authors" : [{
+    "name" : "beinarovic",
+    "email" : "e.beinarovics@gmail.com"
+  }],
+  "keywords" : [
+    "symfony lokalise translation bundle"
+  ],
+  "license" : [
+    "MIT"
+  ],
+  "require" : {
+    "ext-zip": "*",
+    "ext-curl": "*"
+  },
+  "autoload" : {
+    "psr-0" : {
+      "Company\\DemoBundle" : ""
+    }
+  },
+  "target-dir" : "Alicorn/LokaliseBundle",
+  "repositories" : [{
+  }],
+  "extra" : {
+    "branch-alias" : {
+    }
+  }
+}
