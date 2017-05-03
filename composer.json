@@ -18,7 +18,7 @@
   },
   "autoload" : {
     "psr-0" : {
-      "Company\\DemoBundle" : ""
+      "Alicorn\\LokaliseBundle" : ""
     }
   },
   "target-dir" : "Alicorn/LokaliseBundle",
