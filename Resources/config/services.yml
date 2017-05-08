@@ -1,4 +1,11 @@
 services:
-#    alicorn_lokalise.example:
-#        class: Alicorn\LokaliseBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    alicorn_lokalise.api.lokalise:
+        class: Alicorn\LokaliseBundle\Api\Lokalise
+        arguments: ["%alicorn_lokalise.base_url%", "%alicorn_lokalise.api_token%", "%alicorn_lokalise.project_id%", "%alicorn_lokalise.type%", "%alicorn_lokalise.use_original%", "%alicorn_lokalise.bundle_structure%"]
+
+
+    alicorn_lokalise.service.downloader:
+        class: Alicorn\LokaliseBundle\Service\Downloader
+        arguments: ["%alicorn_lokalise.host%", "%alicorn_lokalise.web_path%", "%alicorn_lokalise.symfony_path%", "%alicorn_lokalise.extract_file%", "%kernel.root_dir%"]
+
+
