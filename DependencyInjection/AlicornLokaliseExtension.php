@@ -39,7 +39,7 @@ class AlicornLokaliseExtension extends Extension
             $container->setParameter('alicorn_lokalise.api_token', null);
             $container->setParameter('alicorn_lokalise.project_id', null);
             $container->setParameter('alicorn_lokalise.type', 'json');
-            $container->setParameter('alicorn_lokalise.use_original', null);
+            $container->setParameter('alicorn_lokalise.use_original', true);
             $container->setParameter('alicorn_lokalise.bundle_structure', null);
             $container->setParameter('alicorn_lokalise.base_url', 'https://lokalise.co/api/');
         }

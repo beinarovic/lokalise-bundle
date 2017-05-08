@@ -49,7 +49,7 @@ class Configuration implements ConfigurationInterface
                     ->defaultValue(1)
                     ->end()
                 ->scalarNode('bundle_structure')
-                    ->defaultValue('%LANG_ISO%.%FORMAT%')
+                    ->defaultValue('%%LANG_ISO%%.%%FORMAT%%')
                     ->end()
                 ->scalarNode('base_url')
                     ->defaultValue('https://lokalise.co/api/')
