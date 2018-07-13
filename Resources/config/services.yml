@@ -1,7 +1,7 @@
 services:
     alicorn_lokalise.api.lokalise:
         class: Alicorn\LokaliseBundle\Api\Lokalise
-        arguments: ["%alicorn_lokalise.base_url%", "%alicorn_lokalise.api_token%", "%alicorn_lokalise.project_id%", "%alicorn_lokalise.type%", "%alicorn_lokalise.use_original%", "%alicorn_lokalise.bundle_structure%"]
+        arguments: ["%alicorn_lokalise.base_url%", "%alicorn_lokalise.api_token%", "%alicorn_lokalise.project_id%", "%alicorn_lokalise.type%", "%alicorn_lokalise.use_original%", "%alicorn_lokalise.bundle_structure%", "%alicorn_lokalise.directory_prefix%"]
 
 
     alicorn_lokalise.service.downloader:

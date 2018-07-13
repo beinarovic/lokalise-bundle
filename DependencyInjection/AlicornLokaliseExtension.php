@@ -35,6 +35,7 @@ class AlicornLokaliseExtension extends Extension
             $container->setParameter('alicorn_lokalise.use_original', $apiConfig['use_original']);
             $container->setParameter('alicorn_lokalise.bundle_structure', $apiConfig['bundle_structure']);
             $container->setParameter('alicorn_lokalise.base_url', $apiConfig['base_url']);
+            $container->setParameter('alicorn_lokalise.directory_prefix', $apiConfig['directory_prefix']);
         } else {
             $container->setParameter('alicorn_lokalise.api_token', null);
             $container->setParameter('alicorn_lokalise.project_id', null);
@@ -42,6 +43,7 @@ class AlicornLokaliseExtension extends Extension
             $container->setParameter('alicorn_lokalise.use_original', true);
             $container->setParameter('alicorn_lokalise.bundle_structure', null);
             $container->setParameter('alicorn_lokalise.base_url', 'https://lokalise.co/api/');
+            $container->setParameter('alicorn_lokalise.directory_prefix', '%LANG_ISO%');
         }
 
 

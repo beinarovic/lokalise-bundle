@@ -9,8 +9,9 @@ class Lokalise
     private $type;
     private $useOriginal;
     private $bundleStructure;
+    private $directoryPrefix;
 
-    public function __construct($baseUrl, $apiToken, $projectId, $type, $useOriginal, $bundleStructure)
+    public function __construct($baseUrl, $apiToken, $projectId, $type, $useOriginal, $bundleStructure, $directoryPrefix)
     {
         $this->baseUrl = $baseUrl;
         $this->apiToken = $apiToken;
@@ -18,6 +19,7 @@ class Lokalise
         $this->type = $type;
         $this->useOriginal = $useOriginal;
         $this->bundleStructure = $bundleStructure;
+        $this->directoryPrefix = $directoryPrefix;
     }
 
     /**
@@ -29,6 +31,7 @@ class Lokalise
             'type' => $this->type,
             'use_original' => $this->useOriginal,
             'bundle_structure' => $this->bundleStructure,
+            'directory_prefix' => $this->directoryPrefix,
         ]);
     }
 
