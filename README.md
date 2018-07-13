@@ -56,6 +56,7 @@ alicorn_lokalise:
         use_original: "0"
         bundle_structure: "%%LANG_ISO%%.%%FORMAT%%"
         base_url: "https://lokalise.co/api/"
+        directory_prefix: "%%LANG_ISO%%"
 ```
 
 ## 5. Configure webhook on lokalise
