@@ -52,7 +52,7 @@ class Configuration implements ConfigurationInterface
                     ->defaultValue('%%LANG_ISO%%.%%FORMAT%%')
                     ->end()
                 ->scalarNode('base_url')
-                    ->defaultValue('https://lokalise.co/api/')
+                    ->defaultValue('https://lokalise.com/api/')
                     ->end()
                 ->scalarNode('directory_prefix')
                     ->defaultValue('%%LANG_ISO%%')
